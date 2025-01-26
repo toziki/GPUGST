@@ -1,41 +1,41 @@
-cd cpudgst
+cd code/cpudgst
 mkdir build
 cd build
 cmake ..
 make 
-./bin/cpudgst 2 /home/lijiayu/gst6/data/ twitch 3 4 0 49
+./bin/cpudgst 2 ../../../data/ twitch 3 4 0 10
 
-cd ../../cpugst
+cd ../../../code/cpugst
 mkdir build
 cd build
 cmake ..
 make 
- ./bin/cpugst 1 /home/lijiayu/gst6/data/ twitch 3 0 49
+ ./bin/cpugst 1 ../../../data/ twitch 3 0 10
 
-cd ../../gpu1gst
+cd ../../../code/gpu1gst
 mkdir build
 cd build
 cmake ..
 make 
- ./bin/gpu1gst 1 /home/lijiayu/gst6/data/ twitch 3 0 49
+ ./bin/gpu1gst 1 ../../../data/ twitch 3 0 10
 
- cd ../../gpu1dgst
+ cd ../../../code/gpu1dgst
 mkdir build
 cd build
 cmake ..
 make 
- ./bin/gpu1dgst 1 /home/lijiayu/gst6/data/ twitch 3 4 0 49
+ ./bin/gpu1dgst 1 ../../../data/ twitch 3 4 0 10
 
- cd ../../gpu2gst
+ cd ../../../code/gpu2gst
 mkdir build
 cd build
 cmake ..
 make 
- ./bin/gpu2gst 1 /home/lijiayu/gst6/data/ twitch 3 0 49
+ ./bin/gpu2gst 1 ../../../data/ twitch 3 0 10
 
- cd ../../gpu2dgst
+ cd ../../../code/gpu2dgst
 mkdir build
 cd build
 cmake ..
 make 
- ./bin/gpu2dgst 1 /home/lijiayu/gst6/data/ twitch 3 4 0 49
+ ./bin/gpu2dgst 1 ../../../data/ twitch 3 4 0 10
