@@ -6,7 +6,17 @@ set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS}  -O3")
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CUDA_SEPARABLE_COMPILATION ON)
 
-
+if(NOT EXISTS ${CMAKE_CURRENT_BINARY_DIR}/cmake/CPM.cmake)
+file(
+  DOWNLOAD
+  https://github.com/cpm-cmake/CPM.cmake/releases/download/v0.40.0/CPM.cmake
+  ${CMAKE_CURRENT_BINARY_DIR}/cmake/CPM.cmake
+)
+endif()
+if(NOT EXISTS ${CMAKE_CURRENT_BINARY_DIR}/CUCO_RAPIDS.cmake)
+    file(DOWNLOAD https://raw.githubusercontent.com/rapidsai/rapids-cmake/branch-24.10/RAPIDS.cmake
+         ${CMAKE_CURRENT_BINARY_DIR}/CUCO_RAPIDS.cmake)
+endif()
 include(${CMAKE_CURRENT_BINARY_DIR}/CUCO_RAPIDS.cmake)
 include(${CMAKE_CURRENT_BINARY_DIR}/cmake/CPM.cmake)
 
