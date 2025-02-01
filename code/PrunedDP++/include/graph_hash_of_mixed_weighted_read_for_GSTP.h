@@ -34,11 +34,11 @@ int read_input_graph(std::string instance_name, graph_v_of_v_idealID &input_grap
 		while (getline(myfile, line_content)) // read file line by line
 		{
 			std::vector<std::string> Parsed_content = parse_string(line_content, " ");
-		if (!Parsed_content[0].compare("input_graph") && !Parsed_content[1].compare("Edge"))
+		if (Parsed_content.size()==3)
 			{
-				int v1 = std::stoi(Parsed_content[2]);
-				int v2 = std::stoi(Parsed_content[3]);
-				int ec = std::stod(Parsed_content[4]);
+				int v1 = std::stoi(Parsed_content[0]);
+				int v2 = std::stoi(Parsed_content[1]);
+				int ec = std::stoi(Parsed_content[2]);
 				input_graph[v1].push_back({v2, ec});
 				input_graph[v2].push_back({v1, ec});
 			}
