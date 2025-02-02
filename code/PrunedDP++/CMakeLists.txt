@@ -5,7 +5,7 @@ set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS}  -O3")
 set(CMAKE_CXX_STANDARD 17)
 # * Determine GPU architectures
 # * Enable the CMake CUDA language
-project(cpugst VERSION 0.0.1 LANGUAGES CXX)
+project(PrunedDP++ VERSION 0.0.1 LANGUAGES CXX)
 
 find_package(Boost REQUIRED)
 message("${Boost_INCLUDE_DIRS}")

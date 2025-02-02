@@ -29,9 +29,9 @@ include(rapids-export)
 include(rapids-find)
 # * Determine GPU architectures
 # * Enable the CMake CUDA language
-rapids_cuda_init_architectures(gpu1gst)
+rapids_cuda_init_architectures(GPUGST)
 message(STATUS "Example: CMAKE_CUDA_ARCHITECTURES: ${CMAKE_CUDA_ARCHITECTURES}")
-project(gpu1gst VERSION 0.0.1 LANGUAGES CXX CUDA)
+project(GPUGST VERSION 0.0.1 LANGUAGES CXX CUDA)
 
 rapids_find_package(
     CUDAToolkit REQUIRED

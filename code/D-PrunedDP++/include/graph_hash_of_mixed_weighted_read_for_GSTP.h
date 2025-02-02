@@ -104,7 +104,7 @@ int read_input_graph(std::string instance_name, graph_v_of_v_idealID &input_grap
 				input_graph[v2].push_back({v1, ec});
 			}
 		}
-		}
+		
 
 		// for (size_t i = 0; i < V; i++)
 		// {
@@ -151,6 +151,7 @@ int read_input_graph(std::string instance_name, graph_v_of_v_idealID &input_grap
 	}
 	return V;
 }
+
 void graph_hash_of_mixed_weighted_read_for_Group(std::string instance_name,
 												 graph_hash_of_mixed_weighted &input_graph, graph_hash_of_mixed_weighted &group_graph,
 												 std::unordered_set<int> &group_vertices)
