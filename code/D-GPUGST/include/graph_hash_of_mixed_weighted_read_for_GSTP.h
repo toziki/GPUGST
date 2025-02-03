@@ -97,7 +97,7 @@ int read_input_graph(std::string instance_name, graph_v_of_v_idealID &input_grap
 				input_graph[v2].push_back({v1, ec});
 			}
 		}
-		}
+		
 
 		// for (size_t i = 0; i < V; i++)
 		// {

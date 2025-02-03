@@ -1,7 +1,7 @@
 # Optimal Group Steiner Tree Search on GPUs
 
 ## GST_data
-The data files are in the folder "data". There are six datasets: Github, Twitch, Youtube, Orkut, DBLP, Reddit. There are 8 files for each dataset. For example, the Github dataset contains the following 8 files:
+The dataset of the paper is stored on [Zenodo](https://zenodo.org/records/14790187) for download. There are six datasets: Github, Twitch, Youtube, Orkut, DBLP, Reddit. There are 8 files for each dataset. For example, the Github dataset contains the following 8 files:
 1. "Github.in". This readable file contains the basic information of this dataset. The two numbers on the first line of the file represent the number of vertices and edges in the graph. The following lines have three numbers representing the two end vertices and the weight of an edge. For example, "18 14919 100" shows that there is an edge between vertex 18 and vertex 14919, with an edge weight of 100.
 
 2. "Github_beg_pos.bin". This is a binary file. The original file has V elements, each element representing the starting position of a vertex's adjacency list. Therefore, the position of a vertex can be obtained by subtracting the starting position of the next vertex from the starting position of that vertex.
@@ -35,7 +35,7 @@ Switch the working directory to GPUGST.
 ```
 cd GPUGST
 ```
-Download the dataset from [OneDrive](https://1drv.ms/f/c/683d9dd9f262486b/Ek6Fl_brQzhDnI2cmhGIHxMBQ-L1ApeSqxwZKE4NBsDXSQ?e=YBWkfH). Assume that the dataset is located in the "data" folder of the working directory GPUGST.
+Download the dataset from [Zenodo](https://zenodo.org/records/14790187). Assume that the dataset is located in the "data" folder of the working directory GPUGST.
 
 
 
